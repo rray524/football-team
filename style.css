@@ -129,12 +129,12 @@ p.bio {
 /* ---------------------
 Sponsor area style 
 ------------------------*/
-section.sponsor-area {
+section.clients-area {
     background: #000000;
     display: flex;
     justify-content: center;
 }
-.container.sponsors {
+.clients {
     display: flex;
     justify-content: space-between;
     align-items: center;
