@@ -11,6 +11,9 @@ body{
 /* ----------------
 Common Styles 
 -------------------*/
+:root{
+    --hover-cursor:pointer;
+}
 
 
 /* ---------------------
@@ -49,6 +52,21 @@ ul.main-nav li a, a.log-btn, a.slider-btn{
 .login-btn, .live-watch-btn {
     background: #E02C6D;
     padding: 10px 24px;
+}
+
+.login-btn:hover, .live-watch-btn:hover {
+    cursor: var(--hover-cursor);
+    background: #c71154;
+    transition: 0.6s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    -moz-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
+    -ms-transition: 0.6s ease-in-out;
+}
+
+.live-watch-btn:hover i.fas.fa-arrow-right {
+    transform: translateX(0.8em);
+    transition: transform 0.9s ease-in-out;
 }
 i.fas.fa-sign-in-alt {
     font-size: 16px;
@@ -108,9 +126,14 @@ section.player-profile {
 .single-profile {
     padding: 15px;
     box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    overflow: hidden;
 }
 .single-profile img {
     width: 315px;
+}
+.single-profile img:hover {
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
 }
 h3.name {
     color: #18191F;
@@ -152,9 +175,19 @@ h2.joursey-titile {
     grid-column-gap: 23px;
     margin-top: 40px;
 }
+img.joursey-img:hover {
+    cursor: pointer;
+    filter: blur(1px) saturate(1);
+    transition: box-shadow 0.3s ease-in;
+    position: relative;
+    top: -10px;
+    bottom: 0;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+}
 .next-icon {
     display: flex;
 }
+
 i.fas.fa-long-arrow-alt-left {
     border: 1px #999 solid;
     border-radius: 3px;
@@ -169,6 +202,9 @@ i.fas.fa-long-arrow-alt-left {
     justify-content: center;
     flex-direction: row;
     margin-right: 4px;
+}
+i.fas.fa-long-arrow-alt-left:hover, i.fas.fa-long-arrow-alt-right:hover {
+    cursor: pointer;
 }
 i.fas.fa-long-arrow-alt-right {
     border: 1px #999 solid;
