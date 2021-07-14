@@ -1,4 +1,6 @@
-/* Font area */
+/* -------------------
+Font area 
+---------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
@@ -6,10 +8,14 @@ body{
     padding: 0;
 }
 
-/* Common Styles */
+/* ----------------
+Common Styles 
+-------------------*/
 
 
-/* header styles */
+/* ---------------------
+header styles 
+------------------------*/
 section.header-slider-area {
     background: #2D25A0;
     display: flex;
@@ -81,7 +87,10 @@ img.football-kick {
     width: 556px;
 }
 
-/* Player profile style */
+/* ---------------------
+Player profile style 
+------------------------*/
+
 section.player-profile {
     display: flex;
     justify-content: center;
@@ -116,4 +125,29 @@ p.bio {
     line-height: 26px;
     font-weight: 400;
     margin: 0;
+}
+
+/* ---------------------
+Footer area style 
+------------------------*/
+section.footer-area {
+    display: flex;
+    margin: 158px 0 63px;
+    justify-content: center;
+}
+footer.container.footer {
+    text-align: center;
+}
+img.footer-logo {
+    width: 483px;
+}
+img.social-image {
+    width: 32px;
+    padding-right: 12px;
+}
+p.copyright-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 400;
 }
