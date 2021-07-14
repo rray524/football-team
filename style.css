@@ -188,7 +188,7 @@ h2.joursey-titile {
     margin-top: 40px;
 }
 img.joursey-img:hover {
-    cursor: pointer;
+    cursor: var(--hover-cursor);
     filter: blur(1px) saturate(1);
     transition: box-shadow 0.3s ease-in;
     position: relative;
@@ -216,7 +216,7 @@ i.fas.fa-long-arrow-alt-left {
     margin-right: 4px;
 }
 i.fas.fa-long-arrow-alt-left:hover, i.fas.fa-long-arrow-alt-right:hover {
-    cursor: pointer;
+    cursor: var(--hover-cursor);
 }
 i.fas.fa-long-arrow-alt-right {
     border: 1px #999 solid;
